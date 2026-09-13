@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Now — Green Apple Holidays</title>
+<meta name="description" content="Book a tourist bus, tempo traveller or car with Green Apple Holidays, Kannur. Get an instant fare estimate and confirm on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 48"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8fd14f"/><stop offset="1" stop-color="#0ea5a5"/></linearGradient></defs><path d="M24 3c7 4 12 6 18 6-1 16-7 27-18 36C13 36 7 25 6 9c6 0 11-2 18-6Z" fill="url(#lg)"/><path d="M24 12l7 13H17l7-13Z" fill="#fff"/></svg><span class="brand-name">Green Apple<span>Holidays</span></span></a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fleet.html">Fleet</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a class="btn btn-primary nav-cta" href="#book">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Home</a> / Book Now</p>
+    <h1>Book Your Ride</h1>
+    <p style="max-width:52ch;margin-inline:auto;color:rgba(255,255,255,.85)">Fill in a few details for an instant estimate — then send it straight to us on WhatsApp to confirm.</p>
+  </div>
+</section>
+
+<section id="book">
+  <div class="container booking-wrap">
+    <!-- FORM -->
+    <form class="form-card reveal" data-booking>
+      <h2 style="font-size:1.5rem">Trip details</h2>
+      <div class="field-row">
+        <div class="field"><label>Your name</label><input name="name" placeholder="e.g. Arun Kumar" required></div>
+        <div class="field"><label>Phone number</label><input name="phone" type="tel" placeholder="10-digit mobile" required></div>
+      </div>
+      <div class="field"><label>Choose vehicle</label><select name="vehicle" required><option value="" disabled selected>Select a vehicle</option></select></div>
+      <div class="field-row">
+        <div class="field"><label>Pickup location</label><input name="pickup" placeholder="e.g. Taliparamba" required></div>
+        <div class="field"><label>Drop / destination</label><input name="drop" placeholder="e.g. Munnar"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>Travel date</label><input name="date" type="date"></div>
+        <div class="field"><label>No. of days</label><input name="days" type="number" min="1" value="1"></div>
+      </div>
+      <div class="field"><label>Approx. total kilometres</label><input name="km" type="number" min="0" placeholder="e.g. 320"></div>
+
+      <div class="estimate">
+        <div><small>Estimated fare</small><div class="val" data-estimate-val>—</div><small>incl. driver batta · fuel &amp; tolls extra</small></div>
+        <div style="font-size:2.2rem">🧮</div>
+      </div>
+
+      <div class="field"><label>Message (optional)</label><textarea name="message" rows="3" placeholder="Any special requests?"></textarea></div>
+
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send enquiry on WhatsApp</button>
+      <p class="form-note" style="margin-top:.9rem">This opens WhatsApp with your details pre-filled. Estimate is indicative — final quote confirmed by our team.</p>
+      <div data-form-ok hidden style="margin-top:1rem;background:#e7f6ec;color:var(--green-700);padding:.9rem 1.1rem;border-radius:12px;font-weight:600">✅ Details ready! Continue in WhatsApp to confirm your booking.</div>
+    </form>
+
+    <!-- INFO -->
+    <aside class="info-card reveal d1">
+      <h3>Talk to us directly</h3>
+      <p style="color:rgba(255,255,255,.8)">We're on call every day — reach out anytime.</p>
+      <ul class="info-list">
+        <li><span class="ico">📞</span><div><a href="tel:+919947050804">9947 05 0804</a><small>Bookings &amp; enquiries</small></div></li>
+        <li><span class="ico">📞</span><div><a href="tel:+918589889090">8589 88 9090</a><small>Alternate line</small></div></li>
+        <li><span class="ico">💬</span><div><a href="https://wa.me/919947050804" target="_blank" rel="noopener">Chat on WhatsApp</a><small>Fastest response</small></div></li>
+        <li><span class="ico">📍</span><div>Taliparamba<small>Kannur, Kerala</small></div></li>
+        <li><span class="ico">📸</span><div><a href="https://www.instagram.com/greenapple__holidays_official/" target="_blank" rel="noopener">@greenapple__holidays_official</a><small>See our latest trips</small></div></li>
+      </ul>
+      <div style="margin-top:1.6rem;border-radius:14px;overflow:hidden">
+        <iframe title="Map — Taliparamba, Kannur" width="100%" height="200" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Taliparamba,+Kannur,+Kerala&output=embed"></iframe>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="foot-brand"><a class="brand" href="index.html" style="color:#fff"><svg class="logo" viewBox="0 0 48 48"><defs><linearGradient id="lgf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8fd14f"/><stop offset="1" stop-color="#0ea5a5"/></linearGradient></defs><path d="M24 3c7 4 12 6 18 6-1 16-7 27-18 36C13 36 7 25 6 9c6 0 11-2 18-6Z" fill="url(#lgf)"/><path d="M24 12l7 13H17l7-13Z" fill="#fff"/></svg><span class="brand-name" style="color:#fff">Green Apple<span>Holidays</span></span></a><p style="margin-top:1rem">Your trusted travel partner in Kannur &amp; Taliparamba.</p></div>
+    <div><h4>Explore</h4><ul><li><a href="fleet.html">Fleet</a></li><li><a href="packages.html">Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Popular tours</h4><ul><li><a href="packages.html">Munnar</a></li><li><a href="packages.html">Wayanad</a></li><li><a href="packages.html">Ooty</a></li><li><a href="packages.html">Bekal</a></li></ul></div>
+    <div><h4>Get in touch</h4><ul><li><a href="tel:+919947050804">📞 9947 05 0804</a></li><li><a href="tel:+918589889090">📞 8589 88 9090</a></li><li>📍 Taliparamba, Kannur</li></ul></div>
+  </div>
+  <div class="container foot-bottom"><span>© <span data-year></span> Green Apple Holidays.</span><span>Made with 🍏 in Kerala</span></div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/919947050804" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.9-1.4A10 10 0 1012 2zm0 2a8 8 0 11-4.2 14.8l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0112 4z"/></svg></a>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
