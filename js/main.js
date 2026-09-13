@@ -1,8 +1,8 @@
 /* ============================================================
    Green Apple Holidays — interactions & dynamic rendering
    ============================================================ */
-const WHATSAPP = "919947050804"; // primary number, intl format for wa.me
-const PHONE_DISPLAY = "9947 05 0804";
+const WHATSAPP = "919947438291"; // primary number, intl format for wa.me
+const PHONE_DISPLAY = "99474 38291";
 
 document.addEventListener("DOMContentLoaded", () => {
   buildHeaderState();

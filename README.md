@@ -49,6 +49,6 @@ Change the WhatsApp number in `js/main.js` (`WHATSAPP` constant).
 
 ## Business details used
 - 📍 Taliparamba, Kannur, Kerala
-- 📞 9947 05 0804 · 8589 88 9090
+- 📞 99474 38291 · 62822 04639
 - 📸 instagram.com/greenapple__holidays_official
 - Fleet named from the profile: Zed One, Boss, 7 / 14 / 17 seater
